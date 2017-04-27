@@ -8,7 +8,7 @@ library(pairsD3)
 library(GGally)
 library(plotly)
 
-setwd("/Users/gcmac/desktop/msan/data_viz/hw3")
+# setwd("/Users/gcmac/desktop/msan/data_viz/hw3")
 df <- read.csv("dataset_Facebook.csv",sep=";")
 df <- na.omit(df)
 df$Paid <- as.factor(ifelse(df$Paid == 1, "Paid", "Not Paid"))
